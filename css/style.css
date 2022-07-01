@@ -8,6 +8,125 @@
     position: relative;
     background-position: center;
 }
+body {
+  margin: 0;
+  padding: 0;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #017c16;
+  font-weight: 800;
+  line-height: 5px;
+  transition: color 0.3s ease;
+}
+.clique {
+    color: #017c16;
+    font-weight: 900;
+}
+
+#menuToggle a:hover{
+  color: rgb(245, 242, 241);
+}
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: rgb(9, 80, 2)
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: rgba(243, 225, 152, 0.76);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 16px;
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
 .redes-sociais {
     position: relative;
     text-align: left;
@@ -15,8 +134,8 @@
     top: 30px;
     letter-spacing: 10px;
 }
-.fa-user, .fa-whatsapp-square, .fa-envelope-open, .fa-map-marker-alt, .fa-mobile-alt, .fa-facebook, .fa-youtube {
-    font-size: 24px;
+.fa-user, .fa-whatsapp-square, .fa-envelope-open, .fa-map-marker-alt, .fa-mobile-alt, .fa-facebook, .fa-youtube, .fa-flickr {
+    font-size: 18px;
     text-align: left;
     color: rgb(9, 80, 2);
 }
@@ -31,7 +150,7 @@
     position: relative;
     text-align: left;
     padding-left: 30px;
-    top: 235px;
+    top: 256px;
     font-size: 20px;
     color: white;
     
@@ -40,7 +159,7 @@
     position: relative;
     text-align: left;
     padding-left: 30px;
-    top: 230px;
+    top: 253px;
     font-size: 14px;
     color: white;
     
@@ -50,7 +169,7 @@
     text-align: left;
     padding-left: 10px;
     padding-left: 20px;
-    top: 390px;
+    top: 410px;
     font-size: 14px;
     color: rgb(1, 48, 9);
 }
