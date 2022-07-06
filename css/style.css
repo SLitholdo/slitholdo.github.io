@@ -18,7 +18,7 @@ body {
 #menuToggle {
   display: block;
   position: relative;
-  top: 20px;
+  top: -35px;
   left: 20px;
   
   z-index: 1;
@@ -150,7 +150,7 @@ body {
     position: relative;
     text-align: left;
     padding-left: 30px;
-    top: 256px;
+    top: 190px;
     font-size: 20px;
     color: white;
     
@@ -159,27 +159,55 @@ body {
     position: relative;
     text-align: left;
     padding-left: 30px;
-    top: 253px;
+    top: 188px;
     font-size: 14px;
     color: white;
     
 }
+.seta {
+  position: relative;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 20px;
+}
 #frase {
     position: relative;
     text-align: left;
-    padding-left: 10px;
-    padding-left: 20px;
-    top: 410px;
+    top: 350px;
     font-size: 14px;
     color: rgb(1, 48, 9);
 }
 @media (min-width: 768px) {
+  #menuToggle {
+    top: -35px;
+    left: 200px;
+   
+  }
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -150px 0 0 -200px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: rgba(243, 225, 152, 0.76);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  .seta {
+    padding-left: 270px;
+    padding-top: 20px;
+  }
     .redes-sociais {
         position: relative;
         text-align: left;
         padding-left: 250px;
        
-    }
+  }
 .contate {
     position: relative;
     text-align: left;
@@ -197,8 +225,31 @@ body {
     text-align: left;
     padding-left: 230px; 
 }
+#frase {
+  position: relative;
+  text-align: left;
+  top: 350px;
+  padding-left: 70px;
+  font-size: 14px;
+  color: rgb(1, 48, 9);
+}
 }
 @media (min-width:1024px) {
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -150px 0 0 -400px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: rgba(243, 225, 152, 0.76);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
     .redes-sociais {
         position: relative;
         text-align: left;
@@ -210,20 +261,115 @@ body {
     text-align: left;
     padding-left: 150px;
 }
+
+#menuToggle {
+  top: -35px;
+  left: 390px;
+ 
+}
+.seta {
+  padding-left: 430px;
+  padding-top: 20px;
+}
+.identidade {
+
+  
+  padding-left: 130px;
+ 
+  
+}
+.identidade1 {
+  position: relative;
+  text-align: left;
+  padding-left: 230px; 
+}
+}
+@media (min-width:1024px) {
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -150px 0 0 -580px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: rgba(243, 225, 152, 0.76);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  #menuToggle {
+    top: -35px;
+    left: 350px;
+   
+  }
+  .seta {
+    padding-left: 390px;
+    padding-top: 20px;
+  }
+    .redes-sociais {
+        position: relative;
+        text-align: left;
+        padding-left: 250px;
+       
+  }
+    .redes-sociais {
+        position: relative;
+        text-align: left;
+        padding-left: 570px;
+       
+    }
+.contate {
+    position: relative;
+    text-align: left;
+    padding-left: 570px;
+}
 .identidade {
     position: relative;
     text-align: left;
-    padding-left: 150px;
+    padding-left: 370px;
    
     
 }
 .identidade1 {
     position: relative;
     text-align: left;
-    padding-left: 150px; 
+    padding-left: 370px; 
+}  
 }
-}
-@media (min-width:1024px) {
+@media (min-width:1440px) {
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -150px 0 0 -580px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: rgba(243, 225, 152, 0.76);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  #menuToggle {
+    top: -35px;
+    left: 560px;
+   
+  }
+  .seta {
+    padding-left: 600px;
+    padding-top: 20px;
+  }
+    .redes-sociais {
+        position: relative;
+        text-align: left;
+        padding-left: 250px;
+       
+  }
     .redes-sociais {
         position: relative;
         text-align: left;
