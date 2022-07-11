@@ -237,7 +237,12 @@ body {
   line-height: 50px;
   padding-left: 10px;
 }
-
+.rodape {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+  font-size: 12px;
+}
 /*midias*/
 @media (min-width: 768px) {
   #menuToggle {
