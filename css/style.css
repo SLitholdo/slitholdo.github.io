@@ -1,5 +1,5 @@
 @charset "UTF-8";@charset "UTF-8";
-
+/*backgrounds*/
 .background-img {
     background-image: url(../img/img-principal.png);
     width: 100%;
@@ -22,7 +22,7 @@ body {
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
-
+/*menu*/
 #menuToggle {
   display: block;
   position: relative;
@@ -134,7 +134,7 @@ body {
 #menuToggle input:checked ~ ul {
   transform: none;
 }
-
+/*icones*/
 .redes-sociais {
     position: relative;
     text-align: left;
@@ -185,6 +185,7 @@ body {
     font-size: 14px;
     color: rgb(1, 48, 9);
 }
+/*lei*/
 #titulo {
   position: relative;
   text-align: left;
@@ -214,6 +215,30 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+/*livro*/
+.texto-livro {
+  position: relative;
+  text-align: left;
+  top: -10px;
+  font-size: 13px;
+  color: rgb(1, 105, 27);
+  letter-spacing: 1px;
+  line-height: 14px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+#titulo-livro {
+  position: relative;
+  text-align: left;
+  top: -380px;
+  font-size: 30px;
+  color: rgb(1, 105, 27);
+  letter-spacing: 1px;
+  line-height: 50px;
+  padding-left: 10px;
+}
+
+/*midias*/
 @media (min-width: 768px) {
   #menuToggle {
     top: -35px;
@@ -270,6 +295,7 @@ body {
   font-size: 14px;
   color: rgb(1, 48, 9);
 }
+
 }
 @media (min-width:1024px) {
   #menu {
